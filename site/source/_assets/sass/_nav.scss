@@ -1,0 +1,26 @@
+.main-nav {
+    background-color: $c-blue;
+    padding: $standardPadding/2;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline;
+
+        li {
+            display: inline;
+
+            a {
+                display: inline-block;
+                color: $c-white;
+                padding: $standardPadding/2;
+                text-decoration: none;
+
+                &:hover, &.selected {
+                    background-color: lighten($c-blue, 50%);
+                }
+            }
+        }
+    }
+}
